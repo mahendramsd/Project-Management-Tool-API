@@ -1,0 +1,17 @@
+package com.msd.api.dto.request;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+
+@Data
+@NoArgsConstructor
+@EqualsAndHashCode
+public class IssueStateRequest implements Serializable {
+
+    private Long issueId;
+    private String fromState;
+    private String toState;
+}
